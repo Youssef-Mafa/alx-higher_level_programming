@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # We use i for the first digit and j for the second
-for i in range(0, 9):
-    for j in range(i + 1, 10):
-        if i is not 8 or j is not 9:
-            print("{:d}{:d}".format(i, j), end=", ")
+for digit1 in range(0, 10):
+    for digit2 in range(digit1 + 1, 10):
+        if digit1 == 8 and digit2 == 9:
+            print("{}{}".format(digit1, digit2))
         else:
-            print("{:d}{:d}".format(i, j))
+            print("{}{}".format(digit1, digit2), end=", ")
