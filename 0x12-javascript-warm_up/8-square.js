@@ -1,14 +1,13 @@
 #!/usr/bin/node
-const len = Number(process.argv[2]);
-if (isNaN(len)) {
-	console.log('Missing size');
-} else {
-	let mySqure;
-	for (let i = 0; i < len; i++) {
-		mySqure = '';
-		for (let j = 0; j < len; j++) {
-			mySqure += 'X';
-		}
-		console.log(mySqure);
+
+const squareSize = Number(process.argv[2]);
+
+if (Number(process.argv[2])) {
+	let i = 0;
+
+	for (i; i < squareSize; i++) {
+		console.log('X'.repeat(squareSize));
 	}
+} else {
+	console.log('Missing size');
 }
